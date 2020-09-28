@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="__static__/admin/css/login.css">
+    <title>登录</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="{:url('admin/user/checkReister')}" method="POST">
+                <h1>注册</h1>
+                <div class="social-container">
+                    <a href="" class="social"><i class="fab fa-qq"></i></a>
+                    <a href="" class="social"><i class="fab fa-weixin"></i></a>
+                    <a href="" class="social"><i class="fab fa-weibo"></i></a>
+                </div>
+                <span>选择以上方式登录或使用您的账号</span>
+                <input type="text" name="username" placeholder="姓名">
+                <input type="password" name="password" placeholder="密码">
+                <input type="email" name="email" placeholder="邮箱">
+                <button>注册</button>
+            </form>
+        </div>
+
+        <div class="form-container sign-in-container">
+            <form action="{:url('admin/user/checkLogin')}" method="POST">
+                <h1>登录</h1>
+                <div class="social-container">
+                    <a href="" class="social"><i class="fab fa-qq"></i></a>
+                    <a href="" class="social"><i class="fab fa-weixin"></i></a>
+                    <a href="" class="social"><i class="fab fa-weibo"></i></a>
+                </div>
+                <span>选择以上方式登录或使用您的账号</span>
+                <input type="text" name="username" placeholder="用户名">
+                <input type="password" name="password" placeholder="密码">
+                <a href="#">忘记密码？</a>
+                <button>登录</button>
+            </form>
+        </div>
+
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>已有账号？</h1>
+                    <p>请使用您的账号登录</p>
+                    <button class="ghost" id="SignIn">登录</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>没有账号？</h1>
+                    <p>立即注册加入我们</p>
+                    <button class="ghost" id="SignUp">注册</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="__static__/admin/js/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Index</title>
+    <link rel="Shortcut Icon" href="__static__/../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="__static__/admin/css/index.css">
+    <link rel="stylesheet" href="__static__/admin/css/frameset.css">
+    <link rel="stylesheet" href="__static__/iconfont/iconfont.css">
+</head>
+
+<body>
+    <!-- 顶部导航栏 -->
+    <div class="navbar">
+        <div class="navbar_list">
+            <i class="icon iconfont">&#xe604;</i>
+        </div>
+        <div class="navbar_user">
+            <img src="" alt="">
+            <span>欢迎您，<b>Admin</b>&nbsp<i class="icon iconfont">&#xe62b;</i></span>
+        </div>
+    </div>
+    <!-- 侧边导航栏 -->
+    <div class="sidebar">
+        <div class="side_logo">
+            <span>Indomite</span>
+        </div>
+        <div class="side_mean">
+            <ul class="mean_list">
+                <li>
+                    <span>
+                        <i class="icon iconfont">&#xe622;</i>&nbsp
+                        主页
+                    </span>
+                </li>
+                <li>
+                    <span onclick="clickBar('sub_mean1')">
+                        <i class="icon iconfont">&#xe642;</i>&nbsp
+                        用户管理
+                    </span>
+                    <ul class="sub_mean" id="sub_mean1">
+                        <li>
+                            <a href="{:url('admin/User/Userlist')}">管理员列表</a>
+                        </li>
+                        <li>
+                            <a href="{:url('admin/User/Useradd')}">添加管理员</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span onclick="clickBar('sub_mean2')">
+                        <i class="icon iconfont">&#xe684;</i>&nbsp
+                        分类管理
+                    </span>
+                    <ul class="sub_mean" id="sub_mean2">
+                        <li>
+                            <a href="{:url('admin/Article/ClassList')}">分类列表</a>
+                        </li>
+                        <li>
+                            <a href="{:url('admin/Article/Classadd')}">添加分类</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span onclick="clickBar('sub_mean3')">
+                        <i class="icon iconfont">&#xe650;</i>&nbsp
+                        文章管理
+                    </span>
+                    <ul class="sub_mean" id="sub_mean3">
+                        <li>
+                            <a href="{:url('admin/article/Artlist')}">文章列表</a>
+                        </li>
+                        <li>
+                            <a href="{:url('admin/article/Artadd')}">添加文章</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    {block name="main"}
+    {/block}
+
+    <!-- 底部信息栏 -->
+    <div class="footerbar">
+
+    </div>
+    <script src="__static__/admin/js/frameset.js"></script>
+    </script>
+</body>
+
+</html>
