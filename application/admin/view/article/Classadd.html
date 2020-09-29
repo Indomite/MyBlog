@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>添加分类</title>
-</head>
-
-<body>
-
-</body>
-
-</html>
+{extend name="common/frameset" /}
+{block name="main"}
+<link rel="stylesheet" href="__static__/admin/css/Artadd.css">
+<div class="body_content">
+    <div class="litter_nav">
+        <span><a href="{:url('admin/index/index')}">主页</a></span>
+        <span>></span>
+        <span><a href="{:url('admin/article/Classadd')}">添加分类</a></span>
+    </div>
+</div>
+{/block}

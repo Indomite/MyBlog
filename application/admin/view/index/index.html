@@ -1,6 +1,36 @@
 {extend name="common/frameset" /}
 
 {block name="main"}
+<style>
+    .main_content {
+        margin: 20px 0 0 30px;
+    }
+
+    .login_time {
+        border-bottom: 2px solid #ddd;
+    }
+
+    .main_content div {
+        padding: 10px;
+    }
+
+    .system_info>span {
+        font-size: 1.1em;
+    }
+
+    .info_list {
+        margin-top: 10px;
+    }
+
+    .info_list>li {
+        padding: 5px 0;
+    }
+
+    .info_list>li>span:nth-child(1) {
+        display: inline-block;
+        width: 100px;
+    }
+</style>
 <div class="body_content">
     <div class="litter_nav">
         <span><a href="{:url('admin/index/index')}">主页</a></span>
@@ -9,7 +39,34 @@
         <div class="main_title">
             <span>欢迎中心</span>
         </div>
-        <div class="main_content">具体内容</div>
+        <div class="main_content">
+            <div class="login_time">
+                <span>上次登录时间</span>
+                <span></span>
+            </div>
+            <div class="system_info">
+                <span>系统信息</span>
+                <ul class="info_list">
+                    <li>
+                        <span>操作系统</span>
+                        <span>Win</span>
+                    </li>
+                    <li>
+                        <span>运行环境</span>
+                        <span></span>
+                    </li>
+                    <li>
+                        <span>PHP版本</span>
+                        <span></span>
+                    </li>
+                    <li>
+                        <span>MySQL版本</span>
+                        <span></span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
     </div>
 </div>
 {/block}

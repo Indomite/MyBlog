@@ -1,0 +1,35 @@
+{extend name="common/frameset" /}
+{block name="main"}
+<link rel="stylesheet" href="__static__/admin/css/website.css">
+<div class="body_content">
+    <div class="litter_nav">
+        <span><a href="{:url('admin/Website/index')}">网站配置</a></span>
+    </div>
+    <div class="main_container">
+        <div class="main_title">
+            <span>网站配置中心</span>
+        </div>
+        <div class="main_content">
+            <form class="">
+                <div class="main_copyright">
+                    <span>版权</span>
+                    <input type="text">
+                </div>
+                <div class="main_contact">
+                    <span>联系方式</span>
+                    <input type="text">
+                </div>
+                <div class="main_number">
+                    <span>ICP备案编号</span>
+                    <input type="text">
+                </div>
+                <div class="main_link">
+                    <span>友情连接</span>
+                    <input type="text">
+                </div>
+                <button>确认保存</button>
+            </form>
+        </div>
+    </div>
+</div>
+{/block}

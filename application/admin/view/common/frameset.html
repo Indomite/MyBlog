@@ -32,7 +32,7 @@
                 <li>
                     <span>
                         <i class="icon iconfont">&#xe622;</i>&nbsp
-                        主页
+                        <a href="{:url('admin/index/index')}">主页</a>
                     </span>
                 </li>
                 <li>
@@ -44,9 +44,9 @@
                         <li>
                             <a href="{:url('admin/User/Userlist')}">管理员列表</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="{:url('admin/User/Useradd')}">添加管理员</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </li>
                 <li>
@@ -77,6 +77,12 @@
                         </li>
                     </ul>
                 </li>
+                <li>
+                    <span>
+                        <i class="icon iconfont">&#xe611;</i>&nbsp
+                        <a href="{:url('admin/website/index')}">网站配置</a>
+                    </span>
+                </li>
             </ul>
         </div>
     </div>
@@ -84,10 +90,6 @@
     {block name="main"}
     {/block}
 
-    <!-- 底部信息栏 -->
-    <div class="footerbar">
-
-    </div>
     <script src="__static__/admin/js/frameset.js"></script>
     </script>
 </body>
