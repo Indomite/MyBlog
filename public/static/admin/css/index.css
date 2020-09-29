@@ -1,0 +1,42 @@
+.body_content {
+    float: left;
+    width: 84%;
+    height: 100%;
+    margin-top: -90vh;
+    margin-left: 220px;
+}
+
+.litter_nav {
+    height: 5vh;
+    padding-left: 20px;
+    background: #eee;
+    margin-bottom: 20px;
+}
+
+.litter_nav a {
+    width: calc(100%-10%);
+    height: 5vh;
+    line-height: 5vh;
+    color: #000; 
+}
+
+.litter_nav a:hover {
+    font-size: 1.2em;
+    color: #009688;
+}
+
+.main_container {
+    height: 80vh;
+    background: #eee;
+}
+
+.main_title {
+    height: 6vh;
+    line-height: 6vh;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #ddd;
+}
+
+.main_title span {
+    margin-left: 20px;
+}

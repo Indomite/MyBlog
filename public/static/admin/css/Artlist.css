@@ -1,0 +1,60 @@
+.main_content {
+    margin: 20px 0 0 30px;
+}
+
+.main_search input {
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding-left: 10px;
+    font-size: 1.1em;
+}
+
+.main_search button {
+    margin-left: 10px;
+    height: 28px;
+    background-color: #009688;
+    padding: 3px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #eee;
+}
+
+.main_form {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.main_do {
+    margin-top: 20px;
+}
+
+.main_do button {
+    margin-left: 10px;
+    background-color: #009688;
+    padding: 5px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #eee;
+}
+
+.main_paging {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.main_paging>a {
+    color: #000;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.main_paging>a:hover {
+    background:#009688;
+}

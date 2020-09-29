@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+/* 顶部导航栏 */
+.navbar {
+    width: 100%;
+    height: 8vh;
+    border-bottom: 1px solid #aaa;
+}
+
+.navbar_list {
+    float: left;
+    margin-top: 2vh;
+    margin-left: 220px;
+}
+
+.navbar_list>i {
+    font-size: 1.5em;
+}
+
+.navbar_user {
+    height: 8vh;
+    padding-right: 5vw;
+    float: right;
+}
+
+.navbar_user span {
+    line-height: 8vh;
+}
+
+/* 顶部的logo */
+.side_logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 8vh;
+    background: rgba(0,0,0,.9);;
+}
+
+/* 书写的文字 */
+.side_logo span {
+    display: block;
+    height: 8vh;
+    padding-top: 10px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #eee;
+    text-align: center;
+    border-bottom: 1px solid #aaa;
+}
+
+/* 左侧菜单 */
+.side_mean {
+    position: relative;
+    width: 200px;
+    height: 92vh;
+    /* overflow: hidden; */
+    background: rgba(0,0,0,.9);;
+    border-right: 1px solid #aaa;
+}
+
+.mean_list {
+    color: #eee;
+}
+
+.mean_list li span{
+    display: block;
+    padding: 10px 15px;
+}
+
+.mean_list>li:hover span{
+    display: block;
+    background: #009688;
+}
+
+.mean_list>li>ul>li {
+    padding: 10px 40px;
+}
+
+.mean_list>li>ul>li:hover {
+    /* border-left: 2px solid #009688; */
+    color: #009688;
+}
+
+.sub_mean {
+    display: none;
+}
