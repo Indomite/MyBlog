@@ -1,11 +1,58 @@
 {extend name="common/frameset" /}
 {block name="main"}
-<link rel="stylesheet" href="__static__/admin/css/Artadd.css">
+<link rel="stylesheet" href="__static__/admin/css/classlist.css">
 <div class="body_content">
     <div class="litter_nav">
         <span><a href="{:url('admin/index/index')}">主页</a></span>
         <span>></span>
         <span><a href="{:url('admin/article/Classlist')}">分类列表</a></span>
+    </div>
+
+    <div class="main_container">
+        <div class="main_title">
+            <span>分类管理</span>
+        </div>
+        <div class="main_content">
+            <div class="main_form">
+                <div class="form_head">
+                    <table width="96%" cellspacing="0" cellpadding="0" border="1">
+                        <thead>
+                            <tr>
+                                <th><input type="radio"></th>
+                                <th>ID</th>
+                                <th>类别标签</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="form_head">
+                    <table width="96%" cellspacing="0" cellpadding="0" border="1">
+                        <tbody>
+                            <tr>
+                                <td align="center"><input type="radio"></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="main_do">
+                <button>删除</button>
+            </div>
+            <div class="main_paging">
+                <a href="">上一页</a>
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">...</a>
+                <a href="">29</a>
+                <a href="">30</a>
+                <a href="">下一页</a>
+            </div>
+        </div>
     </div>
 </div>
 {/block}

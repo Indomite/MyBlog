@@ -29,6 +29,16 @@
     width: 100%;
 }
 
+table>tbody{
+    border-top: none;
+    text-align: center;
+}
+
+table thead tr th, 
+table tbody tr td{
+    width: 60px;
+}
+
 .main_do {
     margin-top: 20px;
 }

@@ -36,8 +36,23 @@ ul {
     float: right;
 }
 
-.navbar_user span {
+.navbar_user>span {
     line-height: 8vh;
+}
+
+.navbar_sub {
+    display: none;
+    padding: 5px 30px;
+    margin-top: -12px;
+    text-align: center;
+    background: #009688;
+    position: absolute;
+    z-index: 999;
+}
+
+.navbar_user:hover
+.navbar_sub{
+    display: block;
 }
 
 /* 顶部的logo */
@@ -66,8 +81,8 @@ ul {
 .side_mean {
     position: relative;
     width: 200px;
-    height: 92vh;
-    /* overflow: hidden; */
+    min-height: 92vh;
+    overflow: hidden;
     background: rgba(0,0,0,.9);;
     border-right: 1px solid #aaa;
 }

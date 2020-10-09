@@ -1,0 +1,42 @@
+.main_content {
+    margin: 20px 0 0 30px;
+}
+
+.main_content div {
+    padding: 10px;
+}
+
+.main_content div span {
+    display: inline-block;
+    width: 100px;
+}
+
+
+.main_content div input {
+    width: 30%;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    padding-left: 10px;
+    font-size: 1.1em;
+}
+
+.main_content button {
+    margin-top: 40px;
+    margin-left: 115px;
+    background-color: #009688;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #eee;
+}
+
+.main_content textarea{
+    border: none;
+}
+
+.main_dis span{
+    
+}

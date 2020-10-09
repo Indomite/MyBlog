@@ -14,19 +14,20 @@
 }
 
 .litter_nav a {
+    display: inline-block;
     width: calc(100%-10%);
     height: 5vh;
     line-height: 5vh;
-    color: #000; 
+    color: #000;
 }
 
 .litter_nav a:hover {
-    font-size: 1.2em;
+    transform: scale(1.1);
     color: #009688;
 }
 
 .main_container {
-    height: 80vh;
+    min-height: 80vh;
     background: #eee;
 }
 
