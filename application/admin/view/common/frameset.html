@@ -14,20 +14,6 @@
 </head>
 
 <body>
-    <!-- 顶部导航栏 -->
-    <div class="navbar">
-        <div class="navbar_user">
-            <img src="" alt="">
-            <span>欢迎您，<b>Admin</b>&nbsp<i class="icon iconfont">&#xe62b;</i></span>
-            <div class="navbar_sub">
-                <ul>
-                    <li>
-                        <a href=""><span>个人信息</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
     <!-- 侧边导航栏 -->
     <div class="sidebar">
         <div class="side_logo">
@@ -90,7 +76,19 @@
         </div>
     </div>
 
+    <!-- 顶部导航栏 -->
+    <div class="navbar">
+        <div class="navbar_user">
+            <img src="" alt="">
+            <span>欢迎您，<b>$username</b>&nbsp<i class="icon iconfont">&#xe62b;</i></span>
+            <div class="navbar_sub">
+                <a href="{:url('admin/User/loginOut')}"><span>退出登录</span></a>
+            </div>
+        </div>
+    </div>
+
     {block name="main"}
+    
     {/block}
 
     <script src="__static__/admin/js/frameset.js"></script>

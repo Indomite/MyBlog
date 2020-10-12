@@ -1,9 +1,8 @@
 .body_content {
-    float: left;
     width: 84%;
     height: 100%;
-    margin-top: -90vh;
     margin-left: 220px;
+    margin-top: 20px;
 }
 
 .litter_nav {
@@ -15,7 +14,6 @@
 
 .litter_nav a {
     display: inline-block;
-    width: calc(100%-10%);
     height: 5vh;
     line-height: 5vh;
     color: #000;

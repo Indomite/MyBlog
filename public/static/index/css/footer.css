@@ -1,0 +1,14 @@
+footer {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width: 80%;
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+}
+
+footer span {
+    color: #555;
+    height: 2rem;
+    line-height: 2rem;
+}

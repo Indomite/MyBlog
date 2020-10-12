@@ -1,0 +1,41 @@
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1rem;
+}
+
+a:hover {
+    transform: scale(1.1);
+    color: #ff6663;
+}
+
+header {
+    width: 80%;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul{
+    width: 100%;
+    padding: 1rem atuo;
+}
+
+nav ul li {
+    padding: 0 1rem;
+}
+
+.left_nav {
+    display: flex;
+}
+
+.right_nav {
+    display: flex;
+    justify-content: flex-end;
+}

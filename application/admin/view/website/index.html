@@ -10,22 +10,22 @@
             <span>网站配置中心</span>
         </div>
         <div class="main_content">
-            <form class="">
+            <form action="{:url('admin/Website/index')}" method="POST">
                 <div class="main_copyright">
                     <span>版权</span>
-                    <input type="text">
+                    <input type="text" name="copyright">
                 </div>
                 <div class="main_contact">
                     <span>联系方式</span>
-                    <input type="text">
+                    <input type="text" name="contart">
                 </div>
                 <div class="main_number">
                     <span>ICP备案编号</span>
-                    <input type="text">
+                    <input type="text" name="number">
                 </div>
                 <div class="main_link">
                     <span>友情连接</span>
-                    <input type="text">
+                    <input type="text" name="links">
                 </div>
                 <button>确认保存</button>
             </form>

@@ -10,9 +10,20 @@ class User extends Controller{
     public function _initialize()
     {
         $renderData = [
-            "id" => session('id'), //登入状态
+            "logined" => false, //登入状态
             "username" => session('username'),
         ];
+        $username = session('username'); //用户名
+        $id = session('id'); //id
+        if ($username) {
+            $renderData["logined"] = true;
+            $userInFo = model('User')->get($id); //获取用户信息
+            if($userInFo) {
+                $renderData["username"] = $username;
+            }
+        } else {
+            $renderData["logined"] = false;
+        }
         $this->assign($renderData);
     }
 
@@ -30,10 +41,8 @@ class User extends Controller{
             'name' => $username,
             'password' => $password,
         ];
-        // var_dump($validateData);
 
         $result = $this->validate($validateData, "User");
-        // var_dump($result);
         if ($result !== true) {
             $this->error($result, 'admin/user/register');
         }
@@ -49,11 +58,14 @@ class User extends Controller{
 
         $newUser = new UserModel($data);
         $result = $newUser->save();
+        $hasUser = model('User')->getByusername($username);
 
-        if ($result) {
+        if ($result && $hasUser == false) {
             $this->success('添加用户成功', 'admin/index/index');
+        } else if ($hasUser == true){
+            $this->error('用户名已存在', 'admin/user/login');
         } else {
-            $this->error('添加用户失败', 'admin/user/sign');
+            $this->error('添加用户失败', 'admin/user/login');
         }
     }
 
@@ -81,6 +93,12 @@ class User extends Controller{
                 }
             }
         }
+    }
+
+    public function loginOut(){
+        session('username', null);
+        session('id', null);
+        $this->redirect("admin/User/Login");
     }
 
     public function Useradd(){

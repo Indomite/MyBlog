@@ -1,0 +1,40 @@
+.container {
+    width: 70%;
+    /* min-height: 100vh; */
+    margin: auto;
+    /* background: pink; */
+}
+
+.swiper {
+    height: 20rem;
+    width: 60%;
+    margin: 1rem auto;
+    background: #ff6663;    
+}
+
+.content {
+    display: flex;
+    margin: 1rem auto;
+}
+
+.main {
+    flex: 80%;
+}
+
+.aside {
+    flex: 20%;
+}
+
+.aside h3 {
+    margin-left: 2rem;
+    border-bottom: 1px solid #555;
+}
+
+.list article {
+    line-height: 1rem;
+    padding-bottom: 1rem;
+}
+
+.list .time {
+    text-align: right;
+}

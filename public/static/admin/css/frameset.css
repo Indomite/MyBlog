@@ -13,59 +13,13 @@ ul {
     list-style: none;
 }
 
-/* 顶部导航栏 */
-.navbar {
-    width: 100%;
-    height: 8vh;
-    border-bottom: 1px solid #aaa;
-}
-
-.navbar_list {
-    float: left;
-    margin-top: 2vh;
-    margin-left: 220px;
-}
-
-.navbar_list>i {
-    font-size: 1.5em;
-}
-
-.navbar_user {
-    height: 8vh;
-    padding-right: 5vw;
-    float: right;
-}
-
-.navbar_user>span {
-    line-height: 8vh;
-}
-
-.navbar_sub {
-    display: none;
-    padding: 5px 30px;
-    margin-top: -12px;
-    text-align: center;
-    background: #009688;
-    position: absolute;
-    z-index: 999;
-}
-
-.navbar_user:hover
-.navbar_sub{
-    display: block;
-}
-
-/* 顶部的logo */
-.side_logo {
-    position: absolute;
-    top: 0;
-    left: 0;
+/* 左侧部分 */
+.sidebar {
     width: 200px;
-    height: 8vh;
-    background: rgba(0,0,0,.9);;
+    min-height: 100vh;
+    background: rgba(0,0,0,.9);
 }
 
-/* 书写的文字 */
 .side_logo span {
     display: block;
     height: 8vh;
@@ -77,13 +31,8 @@ ul {
     border-bottom: 1px solid #aaa;
 }
 
-/* 左侧菜单 */
 .side_mean {
-    position: relative;
-    width: 200px;
-    min-height: 92vh;
     overflow: hidden;
-    background: rgba(0,0,0,.9);;
     border-right: 1px solid #aaa;
 }
 
@@ -106,10 +55,42 @@ ul {
 }
 
 .mean_list>li>ul>li:hover {
-    /* border-left: 2px solid #009688; */
     color: #009688;
 }
 
 .sub_mean {
     display: none;
+}
+
+/* 顶部部分 */
+.navbar {
+    margin-top: -100vh;
+    margin-left: 200px;
+    height: 8vh;
+    border-bottom: 1px solid #aaa;
+}
+
+.navbar_user {
+    float: right;
+}
+
+.navbar_user span {
+    margin-right: 5vh;
+    line-height: 8vh;
+}
+
+.navbar_sub {
+    display: none;
+    width: 150px;
+    background: #009688;
+    padding: atuo 10px;
+}
+
+.navbar_sub span {
+    padding: auto 10px;
+}
+
+.navbar_user:hover
+.navbar_sub {
+    display: block;
 }

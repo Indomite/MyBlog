@@ -4,11 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Indomite</title>
+    <!-- 连接插槽 -->
+    {block name="link"}
+        <link rel="stylesheet" href="__static__/index/css/header.css">
+        <link rel="stylesheet" href="__static__/index/css/footer.css">
+    {/block}
+    <link rel="stylesheet" href="__static__/index/css/index.css">
 </head>
 
 <body>
-    <h3>Index 首页</h3>
+    {include file='common/header'/}
+    <div class="container">
+        <div class="swiper">
+            
+        </div>
+        <div class="content">
+            <div class="main">
+                <div class="list">
+                    <article>
+                        <h2>CSS：水平居中并限定最大的宽度</h2>
+                        <p class="description">一个 CSS 布局和样式的问题，如何在水平居中和限制最大宽度中，进行平衡➥Read More</p>
+                        <p class="time">2020.10.12 21:30</p>
+                    </article>
+                    <article>
+                        <h2>如何写一篇垃圾的技术文章</h2>
+                        <p class="description">很多写博客的人，经常会想着如何写出一篇好的技术文章，那么知道了什么是垃圾的技术文章后，虽然暂时写不出好的文章，但至少已经不是垃圾的文章了➥Read More</p>
+                        <p class="time">2020.10.12 21:30</p>
+                    </article>
+                    <article>
+                        <h2>如何在 react 中使用 if-elseif-else 多重条件判断</h2>
+                        <p class="description">很多写博客的人，经常会想着如何写出一篇好的技术文章，那么知道了什么是垃圾的技术文章后，虽然暂时写不出好的文章，但至少已经不是垃圾的文章了➥Read More</p>
+                        <p class="time">2020.10.12 21:30</p>
+                    </article>
+                    <article>
+                        <h2>node同构直出中多级缓存的使用</h2>
+                        <p class="description">很多写博客的人，经常会想着如何写出一篇好的技术文章，那么知道了什么是垃圾的技术文章后，虽然暂时写不出好的文章，但至少已经不是垃圾的文章了➥Read More</p>
+                        <p class="time">2020.10.12 21:30</p>
+                    </article>
+                </div>
+            </div>
+            <div class="aside">
+                <h3>文章归档</h3>
+                <ul>
+                    <li><a href="">2020年12月</a></li>
+                    <li><a href="">2020年11月</a></li>
+                    <li><a href="">2020年9月</a></li>
+                    <li><a href="">2020年8月</a></li>
+                    <li><a href="">2020年7月</a></li>
+                    <li><a href="">2020年5月</a></li>
+                    <li><a href="">2020年5月</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {include file='common/footer'/}
 </body>
 
 </html>
