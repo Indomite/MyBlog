@@ -1,0 +1,28 @@
+header {
+    border-bottom: 1px solid #ddd;
+}
+
+.container {
+    min-height: 31rem;
+    width: 60%;
+    margin: 2rem auto;
+}
+
+.count {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.count>span {
+    font-size: 1.5rem;
+}
+
+.count>span>span {
+    color: #ff6663;
+}
+
+.tag_box a {
+    display: inline-block;
+    line-height: 2rem;
+    padding: 0 1rem;
+}

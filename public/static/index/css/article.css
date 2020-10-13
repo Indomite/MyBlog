@@ -1,0 +1,27 @@
+header {
+    border-bottom: 1px solid #ddd;
+}
+
+.container {
+    display: flex;
+    width: 70%;
+    margin: 2rem auto;
+}
+
+.content {
+    flex: 70%;
+}
+
+.aside {
+    flex: 15%;
+}
+
+.aside h3 {
+    margin-left: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #555;
+}
+
+.aside ul li {
+    padding: 0.5rem 0;
+}

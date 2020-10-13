@@ -5,7 +5,6 @@ ul li {
 a {
     text-decoration: none;
     color: #555;
-    font-size: 1rem;
 }
 
 a:hover {
@@ -24,7 +23,7 @@ nav {
 
 nav ul{
     width: 100%;
-    padding: 1rem atuo;
+    padding-left: 1rem;
 }
 
 nav ul li {

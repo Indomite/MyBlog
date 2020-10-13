@@ -1,33 +1,60 @@
 .container {
     width: 70%;
-    /* min-height: 100vh; */
     margin: auto;
-    /* background: pink; */
 }
 
 .swiper {
-    height: 20rem;
-    width: 60%;
+    position: relative;
+    height: 30rem;
     margin: 1rem auto;
-    background: #ff6663;    
+    background: #ff6663;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#picture {
+    position: absolute;
+    width: 1000%;
+    height: 30rem;
+}
+
+#picture img {
+    float: left;
+    width: 80rem;
+    height: 30rem;
+}
+
+.swiper span {
+    position: absolute;
+    color: #eee;
+    font-size: 4rem;
+    z-index: 2;
+}
+
+.swiper span:hover {
+    cursor: pointer;
+    color: #ff6663;
+}
+
+.left_btn {
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+}
+
+.right_btn {
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
 }
 
 .content {
     display: flex;
-    margin: 1rem auto;
+    margin: 2rem auto;
 }
 
 .main {
     flex: 80%;
-}
-
-.aside {
-    flex: 20%;
-}
-
-.aside h3 {
-    margin-left: 2rem;
-    border-bottom: 1px solid #555;
 }
 
 .list article {
@@ -37,4 +64,18 @@
 
 .list .time {
     text-align: right;
+}
+
+.aside {
+    flex: 20%;
+}
+
+.aside h3 {
+    margin-left: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #555;
+}
+
+.aside ul li {
+    padding: 0.5rem 0;
 }

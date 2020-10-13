@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "14246329",
+      "name": "csdn",
+      "font_class": "csdn",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "15337722",
+      "name": "Logo GitHub",
+      "font_class": "huaban88",
+      "unicode": "e67c",
+      "unicode_decimal": 59004
+    },
+    {
+      "icon_id": "17465267",
+      "name": "link",
+      "font_class": "link",
+      "unicode": "e842",
+      "unicode_decimal": 59458
+    },
+    {
       "icon_id": "4174530",
       "name": "网站配置",
       "font_class": "wangzhanpeizhi",
